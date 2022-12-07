@@ -17,7 +17,7 @@ services:
       - 'ATL_JDBC_PASSWORD=Jiraydroneslab2022'
       - 'JVM_MINIMUM_MEMORY=1g'
       - 'JVM_MAXIMUM_MEMORY=2g'
-      - 'ATL_PROXY_NAME=ydr.jira.com'
+      - 'ATL_PROXY_NAME=10.13.14.127'
       - 'ATL_PROXY_PORT=80'
       - 'ATL_TOMCAT_CONTEXTPATH=/jira'
     logging:
