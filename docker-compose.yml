@@ -67,12 +67,13 @@ services:
     ports:
       - '7990:7990'
     environment:
-      - 'JDBC_URL=postgresql://bitbucketuser@postgresql/jiradb'
+      - 'JDBC_URL=postgresql://bitbucketuser@postgresql/bitbucketdb'
       - 'JDBC_PASSWORD=Bitbucketydroneslab2022'
       - 'JVM_MINIMUM_MEMORY=1g'
       - 'JVM_MAXIMUM_MEMORY=2g'
       - 'SERVER_PROXY_NAME=10.13.14.127'
       - 'SERVER_PROXY_PORT=80'
+      - 'ATL_TOMCAT_CONTEXTPATH=/bitbucket'
     logging:
       driver: "json-file"
       options:
