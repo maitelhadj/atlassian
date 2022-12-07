@@ -63,9 +63,10 @@ services:
     networks:
       - atlassiannet
     volumes:
-      - bitbucketdata:/var/atlassian/bitbucket
+      - bitbucketdata:/var/atlassian/application-data/bitbucket
     ports:
       - '7990:7990'
+      - '7999:7999'
     environment:
       - 'JDBC_URL=postgresql://bitbucketuser@postgresql/bitbucketdb'
       - 'JDBC_PASSWORD=Bitbucketydroneslab2022'
