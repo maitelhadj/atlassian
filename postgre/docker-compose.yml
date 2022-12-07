@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  
+  postgresql:
+    image: postgres:13
+    container_name: postgresql
+    hostname: postgresql
+    restart: unless-stopped
+    networks:
+      - atlassiannet
+    volumes:
+      - /var/postgresql/data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=QksuYejx_speI93'
+      - 'POSTGRES_ENCODING=UNICODE'
+      - 'POSTGRES_COLLATE=C'
+      - 'POSTGRES_COLLATE_TYPE=C'
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"
+
+networks:
+  atlassiannet:
+    name: network-atlassian
