@@ -33,5 +33,6 @@ EOSQL
 }
 
 create_user_and_database "jira" "Jiraydroneslab2022" "y"
+create_user_and_database "bitbucket" "Bitbucketydroneslab2022" "n"
 
 echo "Multiple databases created"
