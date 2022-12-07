@@ -72,9 +72,11 @@ services:
       - 'JDBC_PASSWORD=Bitbucketydroneslab2022'
       - 'JVM_MINIMUM_MEMORY=1g'
       - 'JVM_MAXIMUM_MEMORY=2g'
-      - 'SERVER_PROXY_NAME=10.13.14.127'
-      - 'SERVER_PROXY_PORT=80'
-      - 'ATL_TOMCAT_CONTEXTPATH=/bitbucket'
+      - 'BITBUCKET_PROXY_NAME=10.13.14.127'
+      - 'BITBUCKET_PROXY_PORT=80'
+      - 'DOCKER_WAIT_HOST=postgresql'
+      - 'DOCKER_WAIT_PORT=5432'
+      - 'BITBUCKET_EMBEDDED_SEARCH=true'
     logging:
       driver: "json-file"
       options:
