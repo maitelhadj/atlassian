@@ -20,6 +20,7 @@ services:
       - 'POSTGRES_ENCODING=UNICODE'
       - 'POSTGRES_COLLATE=C'
       - 'POSTGRES_COLLATE_TYPE=C'
+    entrypoint: ["sh","/opt/create-db.sh"]
     logging:
       driver: "json-file"
       options:
