@@ -10,6 +10,7 @@ services:
     networks:
       - atlassiannet
     volumes:
+      - ./create-db.sh:/opt/create-db.sh
       - /var/postgresql/data:/var/lib/postgresql/data
     ports:
       - '5432:5432'
