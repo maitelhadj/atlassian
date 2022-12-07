@@ -32,6 +32,6 @@ create_user_and_database() {
 EOSQL
 }
 
-create_user_and_database "jira" "yourjirapwd" "y"
+create_user_and_database "jira" "Jiraydroneslab2022" "y"
 
 echo "Multiple databases created"
